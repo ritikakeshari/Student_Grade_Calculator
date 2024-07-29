@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0e1538;
+}
+.container-fluid {
+  background-color: rgb(7, 1, 38);
+  color: white;
+  height: auto;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.card-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3rem;
+}
+.card-left-side > h3 {
+  border-right: 4px solid white;
+  padding: 10px;
+  margin-bottom: 100px;
+}
+.wrap-input-16 .label {
+  font-size: 0.9rem;
+  margin: 0.3rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+.wrap-input-16 .input {
+  color: #171c46;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  background-color: #e8ebff;
+  border: none;
+  width: 350px;
+  display: block;
+  border-bottom: 0.1rem solid transparent;
+  transition: all 0.3s;
+}
+.wrap-input-16 .input:placeholder-shown + .label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+.btn-neon-10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn-neon-10 a {
+  position: relative;
+  width: 120px;
+  height: 40px;
+  display: inline-block;
+  background: #fff;
+  margin-bottom: 16px;
+}
+.btn-neon-10 a:before, .btn-neon-10 a:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transition: 0.5s;
+}
+.btn-neon-10 a:before, .btn-neon-10 a:after {
+  background: linear-gradient(45deg, #00ccff, #0e1538, #d400d4);
+}
+.btn-neon-10 a:hover:before {
+  inset: -3px;
+}
+.btn-neon-10 a:hover:after {4
+  inset: -3px;
+  filter: blur(10px);
+}
+.btn-neon-10 a span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  background: #0e1538;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #fff;
+  border: 1px solid #040a29;
+  overflow: hidden;
+  cursor: pointer;
+}
+.btn-neon-10 a span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.075);
+  transform: skew(25deg);
+}
+#result {
+  color: white;
+  font-weight: bold;
+}

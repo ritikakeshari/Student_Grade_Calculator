@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CSS -->
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container-fluid rounded-4">
+        <h4 class="m-4 text-decoration-underline p-2 fw-bold">Find the Grade of Your Average Marks</h4>
+            <div class="wrap-input-16">
+                <input type="text" class="input" id="name" placeholder="Student Name" required="" />
+                <label for="name" class="label">Student Name</label>
+              </div>
+    
+              <div class="wrap-input-16">
+                <input type="text" class="input" id="enroll" placeholder="Enrollment Number" required="" />
+                <label for="name" class="label">Enrollment Number</label>
+              </div>
+
+        <div class="card-style">
+            <div class="card-left-side">
+                <h3>STUDENT <br> GRADE<br> CALCULATOR</h3>
+            </div>
+       
+            <div class="card-right-side">
+            <h6 class="mb-2 text-decoration-underline pb-2" >MARKS</h6>
+    
+              <div class="wrap-input-16">
+                <input type="text" class="input" id="frt" placeholder="Frontent Technology" required="" />
+                <label for="name" class="label">Frontent Technology's Marks</label>
+              </div>
+    
+              <div class="wrap-input-16">
+                <input type="text" class="input" id="bck" placeholder="Backend Technology" required="" />
+                <label for="name" class="label">Backend Technology's Marks</label>
+              </div>
+    
+              <div class="wrap-input-16">
+                <input type="text" class="input" id="db" placeholder="Database" required="" />
+                <label for="name" class="label">Database's Marks</label>
+              </div>
+    
+              <div class="wrap-input-16">
+                <input type="text" class="input" id="react" placeholder="React" required="" />
+                <label for="name" class="label">React's Marks</label>
+              </div>
+    
+              <div class="btn-group m-3">
+                <div class="btn-neon-10">
+                  <a>
+                    <button type="submit"><span onclick="getResult()">Get Result</span></button>
+                  </a>
+                 </div>
+                 <div class="btn-neon-10">
+                  <a>
+                    <button type="reset" id="resetButton"><span onclick="resetForm()">Reset</span></button>
+                  </a>
+                 </div>
+              </div>
+            </div>
+        </div>
+        <div id="result">
+            <h4>Result:</h4>
+            <output id="total"></output><br>
+            <output id="average"></output><br>
+            <output id="grade"></output>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
