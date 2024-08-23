@@ -1,10 +1,7 @@
 # Student Grade Calculator
-
-![Student Grade Calculator](screenshot.png)
-
 ## Overview
 
-The Student Grade Calculator is a web-based application that allows users to calculate the grades of students based on their scores. This tool is useful for educators, students, and parents to easily determine the grade for a particular score. The application is built using [your tech stack, e.g., React, Angular, etc.], providing a user-friendly interface for efficient and accurate grade calculations.
+The Student Grade Calculator is a web-based application that allows users to calculate the grades of students based on their scores. This tool is useful for educators, students, and parents to easily determine the grade for a particular score. The application is built using JavaScript, providing a user-friendly interface for efficient and accurate grade calculations.
 
 ## Features
 
